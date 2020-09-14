@@ -1,0 +1,382 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0D44A48C-2F84-45B2-A8F1-9B11B690E1B8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PrisonManagementSystem</RootNamespace>
+    <AssemblyName>PrisonManagementSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Frm_admin_Block.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_admin_Block.Designer.cs">
+      <DependentUpon>Frm_admin_Block.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Block_Info_display.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Block_Info_display.Designer.cs">
+      <DependentUpon>Frm_Block_Info_display.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_ChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ChangePassword.Designer.cs">
+      <DependentUpon>Frm_ChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Data_Options.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Data_Options.Designer.cs">
+      <DependentUpon>Frm_Data_Options.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Feedback_display.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Feedback_display.Designer.cs">
+      <DependentUpon>Frm_Feedback_display.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Feedback_manipulate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Feedback_manipulate.Designer.cs">
+      <DependentUpon>Frm_Feedback_manipulate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_guard_Info_display.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_guard_Info_display.Designer.cs">
+      <DependentUpon>Frm_guard_Info_display.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_guard_Info_manipulate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_guard_Info_manipulate.Designer.cs">
+      <DependentUpon>Frm_guard_Info_manipulate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_guard_Block.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_guard_Block.Designer.cs">
+      <DependentUpon>Frm_guard_Block.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_guard_login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_guard_login.Designer.cs">
+      <DependentUpon>Frm_guard_login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Prisoner_Info_Block.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Prisoner_Info_Block.Designer.cs">
+      <DependentUpon>Frm_Prisoner_Info_Block.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Prisoner_detail_display.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Prisoner_detail_display.Designer.cs">
+      <DependentUpon>Frm_Prisoner_detail_display.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Prisoner_detail_manipulate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Prisoner_detail_manipulate.Designer.cs">
+      <DependentUpon>Frm_Prisoner_detail_manipulate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Prisoner_Info_display.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Prisoner_Info_display.Designer.cs">
+      <DependentUpon>Frm_Prisoner_Info_display.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Prisoner_Info_manipulate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Prisoner_Info_manipulate.Designer.cs">
+      <DependentUpon>Frm_Prisoner_Info_manipulate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Prs_CourtWise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Prs_CourtWise.Designer.cs">
+      <DependentUpon>Frm_Prs_CourtWise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Prs_GenderWise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Prs_GenderWise.Designer.cs">
+      <DependentUpon>Frm_Prs_GenderWise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Prs_StatusWise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Prs_StatusWise.Designer.cs">
+      <DependentUpon>Frm_Prs_StatusWise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Purchase_display.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Purchase_display.Designer.cs">
+      <DependentUpon>Frm_Purchase_display.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Purchase_manipulate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Purchase_manipulate.Designer.cs">
+      <DependentUpon>Frm_Purchase_manipulate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Sale_display.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Sale_display.Designer.cs">
+      <DependentUpon>Frm_Sale_display.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Sale_manipulate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Sale_manipulate.Designer.cs">
+      <DependentUpon>Frm_Sale_manipulate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_select_user.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_select_user.Designer.cs">
+      <DependentUpon>Frm_select_user.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_admin_login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_admin_login.Designer.cs">
+      <DependentUpon>Frm_admin_login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_supervisor_Block.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_supervisor_Block.Designer.cs">
+      <DependentUpon>Frm_supervisor_Block.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_supervisor_login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_supervisor_login.Designer.cs">
+      <DependentUpon>Frm_supervisor_login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Visit_display.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Visit_display.Designer.cs">
+      <DependentUpon>Frm_Visit_display.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Visit_manipulate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Visit_manipulate.Designer.cs">
+      <DependentUpon>Frm_Visit_manipulate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Work_Assigned_display.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Work_Assigned_display.Designer.cs">
+      <DependentUpon>Frm_Work_Assigned_display.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Work_Assigned_manipulate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Work_Assigned_manipulate.Designer.cs">
+      <DependentUpon>Frm_Work_Assigned_manipulate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Work_Info_Block.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Work_Info_Block.Designer.cs">
+      <DependentUpon>Frm_Work_Info_Block.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Work_Info_display.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Work_Info_display.Designer.cs">
+      <DependentUpon>Frm_Work_Info_display.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Work_Info_manipulate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Work_Info_manipulate.Designer.cs">
+      <DependentUpon>Frm_Work_Info_manipulate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Frm_admin_Block.resx">
+      <DependentUpon>Frm_admin_Block.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_admin_login.resx">
+      <DependentUpon>Frm_admin_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Block_Info_display.resx">
+      <DependentUpon>Frm_Block_Info_display.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ChangePassword.resx">
+      <DependentUpon>Frm_ChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Data_Options.resx">
+      <DependentUpon>Frm_Data_Options.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Feedback_display.resx">
+      <DependentUpon>Frm_Feedback_display.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Feedback_manipulate.resx">
+      <DependentUpon>Frm_Feedback_manipulate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_guard_Block.resx">
+      <DependentUpon>Frm_guard_Block.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_guard_Info_display.resx">
+      <DependentUpon>Frm_guard_Info_display.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_guard_Info_manipulate.resx">
+      <DependentUpon>Frm_guard_Info_manipulate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_guard_login.resx">
+      <DependentUpon>Frm_guard_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Prisoner_detail_display.resx">
+      <DependentUpon>Frm_Prisoner_detail_display.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Prisoner_detail_manipulate.resx">
+      <DependentUpon>Frm_Prisoner_detail_manipulate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Prisoner_Info_Block.resx">
+      <DependentUpon>Frm_Prisoner_Info_Block.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Prisoner_Info_display.resx">
+      <DependentUpon>Frm_Prisoner_Info_display.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Prisoner_Info_manipulate.resx">
+      <DependentUpon>Frm_Prisoner_Info_manipulate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Prs_CourtWise.resx">
+      <DependentUpon>Frm_Prs_CourtWise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Prs_GenderWise.resx">
+      <DependentUpon>Frm_Prs_GenderWise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Prs_StatusWise.resx">
+      <DependentUpon>Frm_Prs_StatusWise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Purchase_display.resx">
+      <DependentUpon>Frm_Purchase_display.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Purchase_manipulate.resx">
+      <DependentUpon>Frm_Purchase_manipulate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Sale_display.resx">
+      <DependentUpon>Frm_Sale_display.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Sale_manipulate.resx">
+      <DependentUpon>Frm_Sale_manipulate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_select_user.resx">
+      <DependentUpon>Frm_select_user.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_supervisor_Block.resx">
+      <DependentUpon>Frm_supervisor_Block.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_supervisor_login.resx">
+      <DependentUpon>Frm_supervisor_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Visit_display.resx">
+      <DependentUpon>Frm_Visit_display.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Visit_manipulate.resx">
+      <DependentUpon>Frm_Visit_manipulate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Work_Assigned_display.resx">
+      <DependentUpon>Frm_Work_Assigned_display.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Work_Assigned_manipulate.resx">
+      <DependentUpon>Frm_Work_Assigned_manipulate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Work_Info_Block.resx">
+      <DependentUpon>Frm_Work_Info_Block.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Work_Info_display.resx">
+      <DependentUpon>Frm_Work_Info_display.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Work_Info_manipulate.resx">
+      <DependentUpon>Frm_Work_Info_manipulate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PMS.LOGO...png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="photo.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
